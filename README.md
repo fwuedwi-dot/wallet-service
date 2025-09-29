@@ -1,13 +1,11 @@
 # wallet-service
 Wallet in Java using Spring 3.
 
-Запуск базы данных
+Запуск 
 
 cd /path/to/wallet-service
 
-docker-compose up -d postgres
-
-docker ps
+docker-compose up --build
 
 #  # Работа 
 
