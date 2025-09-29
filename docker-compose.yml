@@ -6,6 +6,7 @@ services:
     ports:
       - "8080:8080"
     environment:
+      - SPRING_PROFILES_ACTIVE=docker
       - DB_HOST=postgres
       - DB_PORT=5432
       - DB_NAME=wallet_db
@@ -35,3 +36,5 @@ volumes:
 
 networks:
   wallet-network:
+    driver: bridge
+
