@@ -9,7 +9,7 @@ docker-compose up -d postgres
 
 docker ps
 
-Работа 
+# #Работа 
 
 # Создание кошелька. Должен вернуть что-то вроде: {"walletId":"a1b2c3d4-1234-5678-9012-abcdef123456","balance":0}
 
