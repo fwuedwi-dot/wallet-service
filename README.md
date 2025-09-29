@@ -11,10 +11,9 @@ docker ps
 
 Работа 
 
-# Создание кошелька
-curl -X POST http://localhost:8080/api/v1/wallets
+# Создание кошелька. Должен вернуть что-то вроде: {"walletId":"a1b2c3d4-1234-5678-9012-abcdef123456","balance":0}
 
-# Должен вернуть что-то вроде: {"walletId":"a1b2c3d4-1234-5678-9012-abcdef123456","balance":0}
+curl -X POST http://localhost:8080/api/v1/wallets
 
 # Пополнение (используйте реальный UUID из предыдущего шага)
 curl -X POST http://localhost:8080/api/v1/wallet \
